@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "2e9a6aec-2c7b-47ab-aad1-08531cd4daf3",
+		"name": "demo-spring-boot-dockerized",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9088/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9088",
+					"path": [
+						"v1",
+						"users"
+					]
+				},
+				"description": "Get all users"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users from service beta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9088/v1/usersBeta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9088",
+					"path": [
+						"v1",
+						"usersBeta"
+					]
+				},
+				"description": "Get all users"
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9088/v1/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9088",
+					"path": [
+						"v1",
+						"user",
+						"1"
+					]
+				},
+				"description": "Get a user by id"
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Keven\",\n\t\"lastName\": \"Loise\",\n\t\"userName\": \"KL\",\n\t\"password\": \"secret\",\n\t\"salary\": \"60000\",\n\t\"age\": \"26\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9088/v1/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9088",
+					"path": [
+						"v1",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
