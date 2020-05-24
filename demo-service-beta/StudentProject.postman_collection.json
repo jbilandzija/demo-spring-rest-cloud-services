@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "bde9b532-420e-4ec9-bee7-f6f13e9470b1",
+		"name": "StudentProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Student",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Michael\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8077/v1/student",
+					"host": [
+						"localhost"
+					],
+					"port": "8077",
+					"path": [
+						"v1",
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8077/v1/student/Michael",
+					"host": [
+						"localhost"
+					],
+					"port": "8077",
+					"path": [
+						"v1",
+						"student",
+						"Michael"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get one  student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8077/v1/student/Michael",
+					"host": [
+						"localhost"
+					],
+					"port": "8077",
+					"path": [
+						"v1",
+						"student",
+						"Michael"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8077/v1/student",
+					"host": [
+						"localhost"
+					],
+					"port": "8077",
+					"path": [
+						"v1",
+						"student"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

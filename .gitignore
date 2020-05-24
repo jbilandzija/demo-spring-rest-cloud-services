@@ -24,3 +24,8 @@ hs_err_pid*
 
 # IDEA settings
 .idea/**
+
+# Service Beta
+demo-service-beta/.idea/**
+demo-service-beta/build/**
+demo-service-beta/.gradle/**
